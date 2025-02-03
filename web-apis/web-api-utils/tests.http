@@ -1,0 +1,23 @@
+### Teste de lowercase
+POST http://localhost:3000/text
+Content-Type: application/json
+
+{
+  "action": "lowercase",
+  "input": "Lorem Ipsum"
+}
+
+### Teste de uppercase
+POST http://localhost:3000/text
+Content-Type: application/json
+
+{
+  "action": "uppercase",
+  "input": "Lorem Ipsum"
+}
+
+### Teste de minimum
+GET http://localhost:3000/number?action=minimum&input=10,1,100
+
+### Teste de maximum
+GET http://localhost:3000/number?action=maximum&input=10,1,100
